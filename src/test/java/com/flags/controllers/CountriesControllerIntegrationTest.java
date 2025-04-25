@@ -127,4 +127,16 @@ class CountriesControllerIntegrationTest {
                 .andExpect(status().isBadRequest());
     }
 
+    @Test
+    void countriesPageRendersWithCountriesList() throws Exception {
+        mockMvc.perform(
+                        get("/countries")
+                                .accept("text/html"))
+                .andExpect(status().isOk())
+                .andExpect(view().name("countries"))
+                .andExpect(model().attributeExists("countries"))
+                .andExpect(content().string(org.hamcrest.Matchers.containsString("Country Flags")));
+    }
+
+
 }

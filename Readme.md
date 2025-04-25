@@ -27,7 +27,7 @@ A Spring Boot REST API for managing and viewing country flag data.
    The application will start on [http://localhost:8080](http://localhost:8080).
 
 3. **First run:**  
-   - If your database is empty, country data is fetched from the [REST Countries API](https://restcountries.com/v3.1/all) and stored locally.
+   - Country data is fetched from the [REST Countries API](https://restcountries.com/v3.1/all) and stored locally.
 
 ---
 
