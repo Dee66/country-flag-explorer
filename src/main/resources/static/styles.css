@@ -223,6 +223,7 @@ h1 {
         font-size: 1.25em;
     }
 }
+
 body {
     background: linear-gradient(135deg, #f8fafc, #e0ecfd 60%, #c6d0ee);
     min-height: 100vh;

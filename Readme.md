@@ -16,8 +16,8 @@ A Spring Boot REST API for managing and viewing country flag data.
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/your-org/your-repo.git
-   cd your-repo
+   git clone https://github.com/Dee66/country-flag-explorer.git
+   cd flags
    ```
 
 2. **Build and run the application:**
@@ -31,62 +31,10 @@ A Spring Boot REST API for managing and viewing country flag data.
 
 ---
 
-## API Usage
+## API Documentation
 
-- **List all countries**
-  ```
-  GET /countries
-  ```
-  Returns:
-  ```json
-  [
-    {"name": "France", "flag": "https://flagcdn.com/fr.svg"},
-    ...
-  ]
-  ```
+Interactive REST API documentation is available via Swagger UI:
 
-- **Get country details**
-  ```
-  GET /countries/{name}
-  ```
-  Returns:
-  ```json
-  {"name":"France","flag":"https://flagcdn.com/fr.svg","population":67000000,"capital":"Paris"}
-  ```
+[Swagger UI - API Docs](http://localhost:8080/swagger-ui/index.html)
 
-- **Add a country**
-  ```
-  POST /countries
-  Content-Type: application/json
-
-  {
-    "name": "Italy",
-    "flag": "it.svg",
-    "population": 60000000,
-    "capital": "Rome"
-  }
-  ```
-
-- **Update a country**
-  ```
-  PUT /countries/{name}
-  Content-Type: application/json
-
-  {
-    "name": "France",
-    "flag": "fr2.svg",
-    "population": 68000000,
-    "capital": "Paris"
-  }
-  ```
-
-- **Delete a country**
-  ```
-  DELETE /countries/{name}
-  ```
-
----
-
-## Running Tests
-
-To run all tests:
+You can use this link to explore and test all available endpoints in your browser.
